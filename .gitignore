@@ -1,0 +1,35 @@
+# ===============================
+# Virtual Environment (The most important part)
+# ===============================
+venv/
+env/
+.venv/
+Scripts/
+Include/
+Lib/
+pyvenv.cfg
+
+# ===============================
+# Python Cache & Jupyter
+# ===============================
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# ===============================
+# ML Model Files & Datasets
+# ===============================
+*.h5
+*.keras
+*.pt
+*.pth
+dataset/
+data/
+
+# ===============================
+# System & IDE
+# ===============================
+.vscode/
+.env
+.DS_Store
+Thumbs.db

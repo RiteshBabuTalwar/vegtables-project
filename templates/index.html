@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GreenClassify | Home</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header class="hero">
+        <h2>Vegetable Recognition</h2>
+        <p>Precision Deep Learning Identification System</p>
+        <div class="glass-card" style="margin-top:40px;">
+            <form action="/predict" method="post" enctype="multipart/form-data">
+                <input type="file" name="file" required style="font-size:1.2rem; margin-bottom:20px;">
+                <br>
+                <button type="submit" class="predict-btn">Start Identification</button>
+            </form>
+        </div>
+    </header>
+
+    <section class="about-scroll">
+        <h2>About The Project</h2>
+        <section id="about" class="about-scroll">
+    <h2>The Vision</h2>
+    
+    <div class="about-text">
+        <p>
+            Green Classify is a high-performance computational platform at the intersection of AI and agriculture. 
+            Utilizing advanced <strong>CNN architectures</strong>, our system executes granular feature extraction 
+            to identify 15 distinct botanical classes with empirical precision.
+        </p>
+        <p>
+            This is the new standard of decentralized quality assurance—driven by 
+            algorithmic truth and architected for a sustainable future.
+        </p>
+    </div>
+
+    <div class="signature-block">
+        <p style="font-size: 1.2rem; letter-spacing: 4px; opacity: 0.8;">CHIEF ARCHITECT</p>
+        <p style="font-size: 3.5rem; color: #4ade80; margin: 0;">Mr. Sourabh Patil</p>
+    </div>
+</section>
+    </section>
+
+    <footer>
+        <p>Developed with Excellence by <strong>Mr. Sourabh Patil</strong></p>
+        <p>© 2026 Green Classify | All Rights Reserved</p>
+    </footer>
+</body>
+</html>

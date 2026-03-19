@@ -1,0 +1,128 @@
+/* Green Classify - Premium Editorial Theme
+    Developed by: Mr. Sourabh Patil
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* Times New Roman throughout for a classic, authoritative feel */
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    /* Background Image Implementation */
+    background: 
+        linear-gradient(rgba(10, 30, 20, 0.8), rgba(20, 50, 35, 0.85)), 
+        url("../background.jpg") no-repeat center center fixed;
+    background-size: cover;
+    
+    /* Global Styles */
+    color: #ffffff;
+    text-align: center;
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+/* Massive Title Hierarchy */
+h1 {
+    font-size: 5.5rem; /* Large, bold titles as requested */
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+h2 { 
+    font-size: 4rem; 
+    color: #4ade80; 
+    margin-bottom: 40px; 
+    text-transform: uppercase;
+}
+
+/* Enhanced Text Sizes for Readability */
+p { 
+    font-size: 2rem; 
+    line-height: 2.0; 
+    color: #cbd5e1; 
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Floating Glassmorphism Cards */
+.glass-card {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 40px;
+    padding: 60px;
+    width: 90%;
+    max-width: 800px;
+    margin: 40px auto;
+    box-shadow: 0 30px 60px rgba(0,0,0,0.4);
+}
+
+/* Buttons */
+.predict-btn {
+    background: #22c55e;
+    color: white;
+    padding: 18px 60px;
+    border-radius: 50px;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.4s;
+    margin-top: 25px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.predict-btn:hover {
+    background: #4ade80;
+    transform: scale(1.08);
+    box-shadow: 0 0 30px rgba(74, 222, 128, 0.4);
+}
+
+/* Result Visualization */
+.confidence-text { 
+    font-size: 2.5rem; 
+    font-weight: bold; 
+    color: #4ade80; 
+    margin: 20px 0; 
+}
+
+.progress-container {
+    background: rgba(255,255,255,0.1);
+    height: 15px;
+    border-radius: 20px;
+    margin: 20px auto;
+    width: 80%;
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 100%;
+    background: #4ade80;
+    box-shadow: 0 0 20px rgba(74, 222, 128, 0.6);
+}
+
+/* Sections */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+}
+
+.about-scroll { 
+    padding: 150px 10%; 
+    background: rgba(0, 0, 0, 0.3);
+}
+
+footer { 
+    padding: 60px; 
+    border-top: 1px solid rgba(255,255,255,0.1); 
+    font-size: 1.3rem; 
+}

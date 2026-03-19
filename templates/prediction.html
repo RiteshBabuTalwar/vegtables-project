@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GreenClassify | Prediction Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="hero">
+        <h1>Analysis Result</h1>
+        <div class="glass-card">
+            <img src="{{ url_for('static', filename='uploads/' + img_name) }}" style="width:100%; max-width:400px; border-radius:20px; margin-bottom:30px;">
+            
+            <h2>Detected: {{ label }}</h2>
+            
+            <p class="confidence-text">{{ confidence }}% Confidence</p>
+            <div class="progress-container">
+                <div class="progress-bar" style="width: confidence "></div>
+            </div>
+
+            <a href="/" class="predict-btn" style="text-decoration:none; display:inline-block;">Identify Another</a>
+        </div>
+    </div>
+    <footer>
+        <p>Developed by <strong>Mr. Sourabh Patil</strong></p>
+    </footer>
+</body>
+</html>
